@@ -3,9 +3,9 @@
     <Header :activeIndex="1" />
 
     <main class="main">
+      <section-1 />
       <section class="placeholder">
-        <h1>Step 2: Header OK</h1>
-        <p>Cek 123</p>
+        <h2>Next: Section-2 (Scroll Toggle)</h2>
       </section>
     </main>
   </div>
@@ -13,10 +13,11 @@
 
 <script>
 import Header from "@/components/header.vue";
-
+import Section1 from "@/components/section-1.vue";
 export default {
   name: "IndexPage",
-  components: { Header },
+
+  components: { Header, "section-1": Section1 },
 };
 </script>
 
