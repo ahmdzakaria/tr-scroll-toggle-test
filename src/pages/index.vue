@@ -4,6 +4,9 @@
 
     <main class="main">
       <section-1 />
+      <section-2 />
+      <etc />
+
       <section class="placeholder">
         <h2>Next: Section-2 (Scroll Toggle)</h2>
       </section>
@@ -14,10 +17,18 @@
 <script>
 import Header from "@/components/header.vue";
 import Section1 from "@/components/section-1.vue";
+import Section2 from "@/components/section-2.vue";
+import Etc from "@/components/etc.vue";
+
 export default {
   name: "IndexPage",
 
-  components: { Header, "section-1": Section1 },
+  components: {
+    Header,
+    "section-1": Section1,
+    "section-2": Section2,
+    etc: Etc,
+  },
 };
 </script>
 
